@@ -1,23 +1,66 @@
 %buttonStyle{
-    padding: 8px 12px;
+    padding: 12px 24px;
     display: grid;
     place-content: center;
-    border: none;
-    border-radius:6px;
-    color:#fff;
+    border-radius: 3px;
+    border: 1px solid  #CEE0F5;
+    color: $color-primary;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    background: transparent;
+    cursor: pointer;
+    text-transform: capitalize;
     transition: all 0.2s linear;
-    box-shadow:  0 0 3px rgba(73, 73, 255, 0.563);
-    background-color:rgb(73, 73, 255);
-    margin:8px;
+
+    
 }
 
 %buttonStyleHover{
-    background-color:rgba(73, 73, 255, 0.76);
-    color:#ebebeb;
+    transition: all 0.2s linear;
+    background-color: $color-primary;
+    color: #FFF;
+    border: 1px solid  $color-primary;
 }
 
 %buttonStyleFocus{
-    background-color:rgba(73, 73, 255, 0.76);
-    color:#ebebeb;
-    outline:  0 0 10px rgba(73, 73, 255, 0.4);
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid  $border-color;
+}
+
+
+////-------------------------------btn2--------
+
+%buttonStyle2{
+    padding: 12px 24px;
+    display: grid;
+    place-content: center;
+    border-radius: 3px;
+    border: 1px solid  $color-primary;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    background: $color-primary;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+
+    
+}
+
+%buttonStyleHover2{
+    transition: all 0.2s linear;
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid  $border-color;
+}
+
+%buttonStyleFocus2{
+    background-color: $color-primary;
+    color: #FFF;
+    border: 1px solid  $color-primary;
 }
