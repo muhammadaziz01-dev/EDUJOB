@@ -1,0 +1,27 @@
+
+.box{
+    width: 200px;
+    height: 200px; 
+    @extend %cardStyle;  
+}
+
+.box:hover{
+    @extend %cardStyleHover;
+}
+
+
+.card{
+    width: 400px;
+    height: 400px;
+    @extend %cardStyle;
+   
+}
+
+.card:hover{
+    @extend %cardStyleHover;
+}
+
+.wrapper-card{
+    @include cardStyle( 0 0 20px silver,300px, 450px, red , 10px 20px 30px);
+    background-color: lime;
+}

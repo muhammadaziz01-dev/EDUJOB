@@ -1,0 +1,23 @@
+%buttonStyle{
+    padding: 8px 12px;
+    display: grid;
+    place-content: center;
+    border: none;
+    border-radius:6px;
+    color:#fff;
+    transition: all 0.2s linear;
+    box-shadow:  0 0 3px rgba(73, 73, 255, 0.563);
+    background-color:rgb(73, 73, 255);
+    margin:8px;
+}
+
+%buttonStyleHover{
+    background-color:rgba(73, 73, 255, 0.76);
+    color:#ebebeb;
+}
+
+%buttonStyleFocus{
+    background-color:rgba(73, 73, 255, 0.76);
+    color:#ebebeb;
+    outline:  0 0 10px rgba(73, 73, 255, 0.4);
+}

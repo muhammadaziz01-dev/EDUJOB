@@ -1,0 +1,43 @@
+.btn-primary{
+    @extend %buttonStyle;
+}
+
+.btn-primary{
+    &:hover{
+        @extend %buttonStyleHover;
+    }
+}
+
+.btn-success{
+    @extend %buttonStyle;
+    background-color: teal;
+}
+
+.btn-success{
+    &:hover{
+        @extend %buttonStyleHover;
+    }
+}
+
+.btn-danger{
+    @extend %buttonStyle;
+    background-color: crimson;
+}
+
+.btn-danger{
+    &:hover{
+        @extend %buttonStyleHover;
+    }
+}
+
+
+.btn-warning{
+    @extend %buttonStyle;
+    background-color: #ffd900;
+}
+
+.btn-warning{
+    &:hover{
+        @extend %buttonStyleHover;
+    }
+}

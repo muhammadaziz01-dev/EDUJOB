@@ -1,0 +1,9 @@
+@mixin cardStyle($bs,$w, $h, $bg, $br){
+    width: $w;
+    height: $h;
+    background-color: $bg;
+    box-shadow:$bs;
+    border-radius:$br;
+    margin: 10px;
+    transition: all 0.2s ease;
+}

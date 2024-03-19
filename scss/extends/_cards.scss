@@ -1,0 +1,14 @@
+
+%cardStyle{
+    background-color: #ede0e0;
+    box-shadow: 0 0 10px rgb(93, 93, 93);
+    margin: 10px;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+ 
+}
+
+%cardStyleHover{
+    box-shadow: 0 0 20px rgb(93, 93, 93);
+    background-color: azure;
+}
