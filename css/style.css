@@ -134,7 +134,7 @@ ul {
   list-style: none;
 }
 
-#featured .featured-wrap-titil a, #popular .popular-wrap-titil a, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1), .btn-warning, .btn-danger, .btn-success, .btn-primary {
+#companies .companies-wrap-cards-card button, #companies .companies-wrap-titil span button, #featured .featured-wrap-titil a, #popular .popular-wrap-titil a, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1), .btn-warning, .btn-danger, .btn-success, .btn-primary {
   padding: 12px 24px;
   display: grid;
   place-content: center;
@@ -151,14 +151,14 @@ ul {
   transition: all 0.2s linear;
 }
 
-#featured .featured-wrap-titil a:hover, #popular .popular-wrap-titil a:hover, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1):hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-primary:hover {
+#companies .companies-wrap-cards-card button:hover, #companies .companies-wrap-cards-card:hover button, #companies .companies-wrap-titil span button:hover, #featured .featured-wrap-titil a:hover, #popular .popular-wrap-titil a:hover, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1):hover, .btn-warning:hover, .btn-danger:hover, .btn-success:hover, .btn-primary:hover {
   transition: all 0.2s linear;
   background-color: #0A65CC;
   color: #FFF;
   border: 1px solid #0A65CC;
 }
 
-#featured .featured-wrap-titil a:active, #popular .popular-wrap-titil a:active, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1):active {
+#companies .companies-wrap-cards-card button:active, #companies .companies-wrap-titil span button:active, #featured .featured-wrap-titil a:active, #popular .popular-wrap-titil a:active, header .nav-bottom-wrap .nav-bottom-btn button:nth-child(1):active {
   background-color: transparent;
   color: #0A65CC;
   border: 1px solid #EDEFF5;
@@ -947,4 +947,104 @@ header .nav-bottom-wrap .nav-bottom-btn {
   font-weight: 600;
   line-height: 24px; /* 150% */
   text-transform: capitalize;
+}
+
+#companies {
+  width: 100%;
+  padding-bottom: 100px;
+}
+#companies .companies-wrap-titil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+#companies .companies-wrap-titil h2 {
+  color: #18191C;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+}
+#companies .companies-wrap-titil span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+#companies .companies-wrap-titil span button {
+  display: flex;
+  align-items: center;
+  color: #0A65CC;
+  background-color: #E7F0FA;
+  border: 1px solid #E7F0FA;
+}
+#companies .companies-wrap-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  row-gap: 24px;
+}
+#companies .companies-wrap-cards-card {
+  padding: 32px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  background: #FFF;
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+#companies .companies-wrap-cards-card:hover {
+  transition: all 0.2s linear;
+  box-shadow: 0px 12px 48px 0px rgba(0, 44, 109, 0.1);
+  border: 1px solid #0A65CC;
+}
+#companies .companies-wrap-cards-card:hover .companies-wrap-cards-card-left-text h3 {
+  color: #0A65CC;
+}
+#companies .companies-wrap-cards-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+#companies .companies-wrap-cards-card-left-text h3 {
+  color: #18191C;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#companies .companies-wrap-cards-card-left-text h3 span {
+  color: #E05151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 12px;
+  background-color: #FCEEEE;
+  border-radius: 52px;
+}
+#companies .companies-wrap-cards-card-left-text p {
+  color: #767F8C;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#companies .companies-wrap-cards-card-left-text p i {
+  font-size: 18px;
+}
+#companies .companies-wrap-cards-card button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #0A65CC;
+  background-color: #E7F0FA;
+  border: 1px solid #E7F0FA;
 }/*# sourceMappingURL=style.css.map */

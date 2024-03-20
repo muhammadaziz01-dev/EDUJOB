@@ -1,0 +1,143 @@
+#companies{
+    width: 100%;
+    padding-bottom: 100px;
+
+    .companies-wrap{
+
+        &-titil{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            h2{
+                color: $text-color1;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 48px;
+            }
+
+            span{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                button{
+                    @extend %buttonStyle;
+                    display: flex;
+                    align-items: center;
+                    color: $color-primary;
+                    background-color: $min-bg-color;
+                    border: 1px solid $min-bg-color;
+    
+                    &:hover{
+                      @extend %buttonStyleHover;
+                    }
+       
+                    &:active{
+                      @extend %buttonStyleFocus;
+                    }
+                }
+            }
+        }
+
+        &-cards{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 24px;
+            row-gap: 24px;
+
+            &-card{
+                padding: 32px;
+                flex: 1 0 0;
+                border-radius: 12px;
+                background:  #FFF;
+                transition: all 0.2s linear;
+                border: 1px solid transparent;
+                cursor: pointer;
+
+                &:hover{
+                    transition: all 0.2s linear;
+                    box-shadow: 0px 12px 48px 0px rgba(0, 44, 109, 0.10);
+                    border: 1px solid $color-primary;
+
+    
+                    button{
+                        @extend %buttonStyleHover;
+                    }
+
+                    .companies-wrap-cards-card-left-text{
+                        h3{
+                            color: $color-primary;
+                        }
+                    }
+                }
+
+                &-left{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    margin-bottom: 32px;
+
+                    &-text{
+                        h3{
+                            color: $text-color1;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 28px;
+                            margin-bottom: 8px;
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+
+                            span{
+                                color: #E05151;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 3px 12px;
+                                background-color:#FCEEEE ;
+                                border-radius: 52px;
+                            }
+                        }
+    
+                        p{
+                            color: $text-color2;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 20px;
+                            display: flex;
+                            align-items: center;
+                            gap:8px;
+
+                            i{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+
+                button{
+                    @extend %buttonStyle;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    color: $color-primary;
+                    background-color: $min-bg-color;
+                    border: 1px solid $min-bg-color;
+    
+                    &:hover{
+                      @extend %buttonStyleHover;
+                    }
+       
+                    &:active{
+                      @extend %buttonStyleFocus;
+                    }
+                }
+            }
+        }
+    }
+}
