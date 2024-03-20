@@ -1,0 +1,100 @@
+#last{
+    width: 100%;
+    padding: 100px 0px;
+
+    .last-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+
+        &-left{
+            padding: 50px;
+            border-radius: 12px;
+            background: var(--Gray-100, #E4E5E8);
+
+            h2{
+                width: 548px;
+                color: $text-color1;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px; 
+                margin-bottom: 16px;
+            }
+
+            p{
+                width: 312px;
+                color: $text-color2;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 26px;
+            }
+
+            a{
+                @extend %buttonStyle;
+                background-color: #fff;
+                border: 1px solid #FFF;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                width: 188px;
+    
+                &:hover{
+                  @extend %buttonStyleHover;
+                }
+    
+                &:active{
+                  @extend %buttonStyleFocus;
+                }
+            }
+        }
+
+        &-right{
+            padding: 50px;
+            border-radius: 12px;
+            background: $color-primary;
+
+            h2{
+                width: 548px;
+                color: #FFF;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 40px; 
+                margin-bottom: 16px;
+            }
+
+            p{
+                width: 312px;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                margin-bottom: 26px;
+            }
+
+            a{
+                @extend %buttonStyle;
+                background-color: #fff;
+                border: 1px solid #FFF;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                width: 188px;
+    
+                &:hover{
+                  @extend %buttonStyleHover;
+                  border: 1px solid #FFF;
+                }
+    
+                &:active{
+                  @extend %buttonStyleFocus;
+                }
+            }
+        }
+    }
+}
